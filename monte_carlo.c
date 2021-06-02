@@ -27,11 +27,11 @@ int main(void) {
   float pi0;
   float pi1;
   
-  pi0 = mc_pi(200000);
-  pi1 = mc_pi(200000);
-  float error = pi1 - pi0;
+  pi0 = mc_pi(25000);
+  pi1 = mc_pi(25000);
+  float error = pi0 - pi1;
   printf("%f %f\n", pi0, pi1);
-  // printf("%f\n", error);
+  //printf("%f\n", error);
   
   if (pi0 == pi1) {
       printf("Two separate estimates of pi are exactly the same. This is unlikely.\n");
@@ -52,6 +52,7 @@ int main(void) {
     }
   }
 }
+
 
 
 
